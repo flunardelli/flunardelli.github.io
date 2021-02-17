@@ -8,16 +8,17 @@
 
   // initialize the SDK
 appboy.initialize('361a037d-ec63-47f7-b856-08baeeb7b9a7', {
-    baseUrl: "sdk.iad-06.braze.com"
+    baseUrl: "sdk.iad-06.braze.com",
+    enableLogging: true
 });
 
 // optionally show all In-App Messages without custom handling
 appboy.display.automaticallyShowNewInAppMessages();
 
 // optionally set the current user's External ID
-if (isLoggedIn){
-    appboy.changeUser(userIdentifier);
-}
+//if (isLoggedIn){
+//    appboy.changeUser(userIdentifier);
+//}
 
 // start (or continue) a session
 appboy.openSession();
